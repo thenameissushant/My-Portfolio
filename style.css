@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+body{
+    background:linear-gradient(90deg,  #f4f7ff, white);
+}
+
+#icon:hover{
+width:30px;
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    cursor: pointer;
+    width: 150px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition:all 0.5s ease-in-out;
+}
+
+nav ul li a:hover{
+     color:#ff4321;
+     text-decoration: underline;
+     font-size: 1.2rem;
+}
+
+.info{
+    margin-left: 8%;
+    margin-top: 50px;
+}
+
+.info h1{
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+span{
+    color:#ff4321;
+    transition: all 0.5s ease;
+}
+
+span:hover{
+    color:#ff2600;
+    font-size: 74px;
+}
+
+.info p{
+    color: var(--secondary-color);
+     line-height: 22px;
+}
+
+.info a{
+    background:var(--secondary-color);
+    padding: 10px 10px;
+    text-decoration: none;
+    color:var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.info a:hover{
+    background: #ff4321;
+    color:#fff;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, 0.445);
+}
+
+.img-box{
+    width: 45px;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    margin-right: 15%;
+}
+
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, all 1s;
+}
+
+.img-box:hover .back-img{
+    bottom: 20px;
+}
+
+.img-box:hover .main-img{
+    left: 90%;
+    height: 90%;
+}
+ 
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social-links a{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.social-links a:hover{
+    font-size: 40px;
+    color:#ff4321;
+}
